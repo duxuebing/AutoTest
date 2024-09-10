@@ -1,29 +1,20 @@
-name: Script
+name: Scheduled Script Execution
 
+# 定义何时触发工作流，使用 cron 表达式
 on:
   schedule:
-    - cron: '0 12 * * *'
+    # 每天晚上 12 点执行（UTC 时间）
+    - cron: '0 0 * * *'
 
+# 任务的执行流程
 jobs:
-
-  build:
+  run-script:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      # 检出项目的代码
+      - name: Check out repository
+        uses: actions/checkout@v3
 
-    - name: Set up Go
-      uses: actions/setup-go@v3
-      with:
-        go-version: 1.18
-
-    - name: 'Gen New Year Calendar'
-      run: go run calendar/calendar.go
-      
-    - name: 'Show Diff'
-      run: git add .
-    
-    - name: 'Push Calendar'
-      uses: actions-go/push@7ad7ce209f2a038e7bca929b7a4c92026363f856
-      with:
-        commit-message: "new calendar"
-        remote: origin
+      # 运行脚本
+      - name: Run the script
+        run: ./script.sh
