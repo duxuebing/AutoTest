@@ -37,8 +37,8 @@ testEn#CLOTH_PERSON：041c72d13603fe3
 testEn#MAGIC_INPAINTING_XL：ed7155a8f390d51
 """
 
-list_deployment_uuid = ["eb9b3a1a18","f3907b6c77","4db0816435","848c1af2b4","2704d249be","ba3428e6a2","3d26ffc9fd","56f414c47f","22faa947e0","4fa825afb7","0f55e25ee9","fab8d2f365","795e73a08c","21be6c6c28","e37b8abc34","9ea5b43c67","d69c7c9b75","d119bd291a","9fcaa93a59","cc57dad58d","8a2de16aca","74e3f0818a","724caccdef","1e9c994099","826db4c036","e6ea84e29f9087f","041c72d13603fe3","ed7155a8f390d51"]
-
+# list_deployment_uuid = ["eb9b3a1a18","f3907b6c77","4db0816435","848c1af2b4","2704d249be","ba3428e6a2","3d26ffc9fd","56f414c47f","22faa947e0","4fa825afb7","0f55e25ee9","fab8d2f365","795e73a08c","21be6c6c28","e37b8abc34","9ea5b43c67","d69c7c9b75","d119bd291a","9fcaa93a59","cc57dad58d","8a2de16aca","74e3f0818a","724caccdef","1e9c994099","826db4c036","e6ea84e29f9087f","041c72d13603fe3","ed7155a8f390d51"]
+list_deployment_uuid = ["3d26ffc9fd"]
 
 headers = {
     "Authorization": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjQ0NjA5LCJ1dWlkIjoiM2M1ODNlYzgtODY1Ny00MWYwLWIzNmMtMGUwNGZlNGIyZDk1IiwiaXNfYWRtaW4iOmZhbHNlLCJpc19zdXBlcl9hZG1pbiI6ZmFsc2UsInN1Yl9uYW1lIjoiIiwidGVuYW50IjoiYXV0b2RsIn0.2vMXRe3Z7tDuR0Z_pmVEli8WK8nlVXMRGjACT0gcfLyMoQZQs2_3yDV7yrjmT4iLiM-4MqCqJjxAHk709F5w4A",
