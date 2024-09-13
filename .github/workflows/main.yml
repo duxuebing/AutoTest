@@ -4,7 +4,7 @@ name: Scheduled Script Execution
 on:
   schedule:
     # 每天晚上 12 点执行（UTC 时间）
-    - cron: '2 21 * * *'
+    - cron: '47 11 * * *'
 
 # 任务的执行流程
 jobs:
