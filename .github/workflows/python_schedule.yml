@@ -1,0 +1,31 @@
+name: Scheduled Python Script Execution
+
+# 触发条件 - 定时任务，使用 cron 表达式
+on:
+  schedule:
+    - cron: '47 11 * * *'  # 每天的 UTC 时间 11:47 (北京时间 19:47)
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest  # 运行在最新的 Ubuntu 环境
+
+    steps:
+      # 检出仓库代码
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      # 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # 使用的 Python 版本，3.x 可以替换为具体版本
+
+      # 安装依赖（如果有 requirements.txt 文件）
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      # 运行 Python 脚本
+      - name: Run Python script
+        run: python script.py
