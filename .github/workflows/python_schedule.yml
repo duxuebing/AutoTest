@@ -3,7 +3,7 @@ name: Scheduled Python Script Execution
 # 触发条件 - 定时任务，使用 cron 表达式
 on:
   schedule:
-    - cron: '47 11 * * *'  # 每天的 UTC 时间 11:47 (北京时间 19:47)
+    - cron: '56 11 * * *'  # 每天的 UTC 时间 11:47 (北京时间 19:47)
 
 jobs:
   run-python-script:
